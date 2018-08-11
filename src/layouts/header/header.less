@@ -1,0 +1,119 @@
+.app-header {
+  height: 140px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
+}
+
+.app-header-top {
+  height: 100px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header-logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  &--img {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--text {
+    margin-left: 16px;
+  }
+
+  &--name {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+.app-header-topnav {
+  font-size: 40px;
+  font-weight: bold;
+
+  .active {
+    color: #000000;
+  }
+
+  span {
+    cursor: pointer;
+    margin-left: 24px;
+    color: #bdbdbd;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}
+
+.app-header-bottom {
+  width: 1200px;
+  margin: 0 auto;
+  height: 40px;
+  position: relative;
+}
+
+.app-header-bottomnav {
+  position: absolute;
+  bottom: 8px;
+
+  &--item {
+    float: left;
+    display: flex;
+    margin-right: 32px;
+    cursor: pointer;
+
+    & > div {
+      display: flex;
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      & > div {
+        border-bottom: 1px solid #000000;
+      }
+    }
+
+    &.active {
+      .app-header-bottomnav--total {
+        margin-top: 0px;
+        font-weight: bold;
+      }
+
+      .app-header-bottomnav--des {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &--icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--des {
+    margin-left: 4px;
+    transition: all 0.2s;
+  }
+
+  &--total {
+    margin-left: 4px;
+    font-size: 12px;
+    margin-top: 3px;
+    transition: all 0.2s;
+  }
+}
