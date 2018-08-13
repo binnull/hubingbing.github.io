@@ -16,7 +16,7 @@ var devConfig = {
   output: {
     path: resolve('dist'),
     publicPath: './dist/',
-    filename: 'blog.js'
+    filename: 'blog.[hash].js'
   },
   plugins: [
     new ExtractTextPlugin('[name].style.[hash].css'),
