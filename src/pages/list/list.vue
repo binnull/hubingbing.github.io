@@ -16,7 +16,19 @@
       </section>
     </div>
     <div class="listpage-right">
-      <h2 class="listpage-right-title">设计思维&设计方法</h2>
+      <section class="listpage-right-wrap">
+        <h2 class="listpage-right-title">设计思维&设计方法</h2>
+        <ul class="listpage-right-content">
+          <li v-for="(item, index) in listData2" :key="index" class="listpage-right-li">
+            <div class="listpage-right-li--top">
+              
+            </div>
+            <div class="listpage-right-li--bottom" :style="{'height': item.height}">
+              {{item.height}}
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
   </section>
 </template>
@@ -26,7 +38,69 @@ export default {
   name: 'list',
   data() {
     return {
-      listData: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      listData: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      listData2: [
+        {
+          height: '100px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '50px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '80px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '60px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '70px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        },
+        {
+          height: '90px',
+          color: 'rgba(22, 43, 214, 0.4)'
+        }
+      ]
     }
   }
 }
