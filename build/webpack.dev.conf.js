@@ -2,7 +2,7 @@
  * @Author: bianhao 
  * @Date: 2017-12-21 16:28:20 
  * @Last Modified by: bianhao
- * @Last Modified time: 2018-08-03 19:48:16
+ * @Last Modified time: 2018-08-19 12:19:23
  */
 const path = require('path')
 const webpack = require('webpack')
@@ -18,7 +18,7 @@ const devConfig = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: '[name].js',
-    publicPath: '',
+    publicPath: '/',
     chunkFilename: '[name].chunk.js'
   },
   plugins: [

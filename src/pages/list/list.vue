@@ -21,10 +21,23 @@
         <ul class="listpage-right-content">
           <li v-for="(item, index) in listData2" :key="index" class="listpage-right-li">
             <div class="listpage-right-li--top">
-              
+              <div class="listpage-right-li--header">
+                <div class="listpage-right-li--logo">
+                  <img src="/image/1.png">
+                </div>
+                <div class="listpage-right-li--title">
+                  <p class="listpage-right-li--titlet">批判性思维</p>
+                  <p class="listpage-right-li--titled">Critical Thinking</p>
+                </div>
+                <div class="listpage-right-li--br"></div>
+              </div>
+              <div class="listpage-right-li--content">
+                通过一定的标准评价思维，进而改善思维，是合理的、反思性的思维，既是思维技能，也是思维倾向。
+              </div>
             </div>
-            <div class="listpage-right-li--bottom" :style="{'height': item.height}">
-              {{item.height}}
+            <div class="listpage-right-li--bottom">
+              <div class="listpage-right-li--more">了解更多 →</div>
+              <div class="listpage-right-li--triangle"></div>
             </div>
           </li>
         </ul>
@@ -41,63 +54,48 @@ export default {
       listData: [1, 2, 3, 4, 5, 6, 7, 8, 9],
       listData2: [
         {
-          height: '100px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '50px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '80px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '60px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '70px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         },
         {
-          height: '90px',
           color: 'rgba(22, 43, 214, 0.4)'
         }
       ]

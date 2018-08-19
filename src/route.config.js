@@ -1,5 +1,6 @@
 import list from './pages/list/list.vue'
-import test from './pages/test/test.md'
+import test from './pages/cv/cv.vue'
+import article from './pages/article/article.vue'
 
 export default [
   {
@@ -21,5 +22,9 @@ export default [
   {
     path: '/cv',
     component: test
+  },
+  {
+    path: '/article/*',
+    component: article
   }
 ]
