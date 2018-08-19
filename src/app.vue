@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <blog-header></blog-header>
-    <router-view></router-view>
+    <blog-header :boxcolor="boxcolor"></blog-header>
+    <router-view @changeBoxColor="changeBoxColor"></router-view>
     <blog-footer></blog-footer>
   </div>
 </template>
@@ -16,7 +16,14 @@ export default {
     blogFooter
   },
   data() {
-    return {}
+    return {
+      boxcolor: 'transparent'
+    }
+  },
+  methods: {
+    changeBoxColor(color) {
+      this.boxcolor = color
+    }
   }
 }
 </script>

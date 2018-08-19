@@ -36,6 +36,7 @@
     font-size: 24px;
     margin-top: 8px;
     font-weight: bold;
+    transition: all 0.3s;
   }
 
   &--tag {
@@ -150,7 +151,7 @@
 
   &--bottom {
     width: 218px;
-    height: 30px;
+    height: 29px;
     position: relative;
   }
 
@@ -158,21 +159,55 @@
     color: #828282;
     border-left: 2px solid #e0e0e0;
     border-bottom: 2px solid #e0e0e0;
-    height: 30px;
-    width: 178px;
+    height: 29px;
+    width: 189px;
     padding-left: 16px;
     line-height: 1;
     font-size: 12px;
   }
 
-  &--triangle {
-    width: 50px;
+  &--triangles {
+    width: 0px;
     height: 0px;
-    border-bottom: 2px solid #e0e0e0;
-    transform: rotate(142deg);
+    border: 19px solid transparent;
+    border-bottom: 19px solid #f7f7f7;
     position: absolute;
-    bottom: 15px;
-    right: -5px;
-    //box-shadow: 0px -8px 20px rgba(22, 43, 214, 0.4);
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(315deg);
+  }
+  &--triangleb {
+    width: 0px;
+    height: 0px;
+    border: 21px solid transparent;
+    border-bottom: 21px solid #e0e0e0;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    transform: rotate(315deg);
+  }
+
+  &:hover {
+    .listpage-right-li--top {
+      background-color: #ffffff;
+      border-top: 2px solid #000000;
+      border-left: 2px solid #000000;
+      border-right: 2px solid #000000;
+    }
+    /*
+    .listpage-right-li--br {
+      background-color: #000000;
+    }*/
+    .listpage-right-li--more {
+      background-color: #ffffff;
+      border-left: 2px solid #000000;
+      border-bottom: 2px solid #000000;
+    }
+    .listpage-right-li--triangles {
+      border-bottom: 19px solid #ffffff;
+    }
+    .listpage-right-li--triangleb {
+      border-bottom: 21px solid #000000;
+    }
   }
 }

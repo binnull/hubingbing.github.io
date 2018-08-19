@@ -1,6 +1,7 @@
 import list from './pages/list/list.vue'
-import test from './pages/cv/cv.vue'
 import article from './pages/article/article.vue'
+import cv from './pages/cv/cv.vue'
+import test from './blogs/articles/15个简单的习惯将帮助你成为更好的UX设计师/index.vue'
 
 export default [
   {
@@ -21,10 +22,16 @@ export default [
   },
   {
     path: '/cv',
-    component: test
+    component: cv
   },
   {
-    path: '/article/*',
-    component: article
+    path: '/article/',
+    component: article,
+    children: [
+      {
+        path: '15',
+        component: test
+      }
+    ]
   }
 ]

@@ -5,6 +5,7 @@
   position: fixed;
   top: 0px;
   box-shadow: 0px 0px 20px rgba(22, 43, 214, 0.4);
+  transition: all 0.3s;
 }
 
 .app-header-top {
@@ -62,6 +63,15 @@
   margin: 0 auto;
   height: 40px;
   position: relative;
+
+  &--hover {
+    width: 56px;
+    position: absolute;
+    height: 2px;
+    bottom: 0px;
+    background-color: #000000;
+    transition: all .5s ease;
+  }
 }
 
 .app-header-bottomnav {
@@ -70,20 +80,17 @@
 
   &--item {
     float: left;
-    display: flex;
-    margin-right: 32px;
     cursor: pointer;
 
-    & > div {
+    &content {
+      display: flex;
+      padding-right: 32px;
+    }
+
+    &wrap {
       display: flex;
       border-bottom: 1px solid transparent;
       transition: all 0.5s;
-    }
-
-    &:hover {
-      & > div {
-        border-bottom: 1px solid #000000;
-      }
     }
 
     &.active {
