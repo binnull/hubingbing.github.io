@@ -15,7 +15,7 @@ var devConfig = {
   entry: ['./src/main.js'],
   output: {
     path: resolve('dist'),
-    publicPath: './dist/',
+    publicPath: '/dist/',
     filename: 'blog.[hash].js'
   },
   plugins: [
